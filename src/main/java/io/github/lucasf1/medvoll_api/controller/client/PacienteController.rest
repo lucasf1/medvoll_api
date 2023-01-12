@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:8080/pacientes
+
+###
+post {{baseUrl}}
+Content-Type: application/json
+
+{
+    "nome": "Mariana Golden",
+    "email": "mariana.golden@voll.med",
+    "cpf": "11111111111",
+    "telefone": "88 999882233",
+    "endereco": {
+        "logradouro": "rua x",
+        "bairro": "bairro",
+        "cep": "554433",
+        "cidade": "Cajá",
+        "uf": "PB",
+        "numero": "112",
+        "complemento": "complemento"
+        }
+}
