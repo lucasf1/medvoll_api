@@ -4,18 +4,51 @@
 post {{baseUrl}}
 Content-Type: application/json
 
+# {
+#     "nome": "Rodrigo Ferreira",
+#     "email": "rodrigo.ferreira@voll.med",
+#     "crm": "123456",
+#     "especialidade": "ORTOPEDIA",
+#     "endereco": {
+#         "logradouro": "rua 1",
+#         "bairro": "bairro",
+#         "cep": "12345678",
+#         "cidade": "Brasilia",
+#         "uf": "DF",
+#         "numero": "1",
+#         "complemento": "complemento"
+#         }
+# }
+
+# {
+#     "nome": "Joao Carlos",
+#     "email": "joao.carlos@voll.med",
+#     "crm": "54333",
+#     "especialidade": "ORTOPEDIA",
+#     "endereco": {
+#         "logradouro": "rua x",
+#         "bairro": "bairro",
+#         "cep": "98765443",
+#         "cidade": "Brasilia",
+#         "uf": "DF",
+#         "numero": "14",
+#         "complemento": "complemento"
+#         }
+# }
+
 {
-    "nome": "Rodrigo Ferreira",
-    "email": "rodrigo.ferreira@voll.med",
-    "crm": "123456",
-    "especialidade": "ORTOPEDIA",
+    "nome": "Carla Azevedo",
+    "email": "carla.azevedo@voll.med",
+    "telefone": "839993435",
+    "crm": "75784",
+    "especialidade": "GINECOLOGIA",
     "endereco": {
-        "logradouro": "rua 1",
+        "logradouro": "rua Z",
         "bairro": "bairro",
-        "cep": "12345678",
+        "cep": "89343933",
         "cidade": "Brasilia",
         "uf": "DF",
-        "numero": "1",
+        "numero": "444",
         "complemento": "complemento"
         }
 }
