@@ -12,7 +12,7 @@ Content-Type: application/json
     "endereco": {
         "logradouro": "rua x",
         "bairro": "bairro",
-        "cep": "554433",
+        "cep": "55443354",
         "cidade": "Cajá",
         "uf": "PB",
         "numero": "112",
