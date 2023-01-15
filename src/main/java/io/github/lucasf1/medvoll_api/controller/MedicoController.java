@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import io.github.lucasf1.medvoll_api.api.medico.DadosCadastroMedico;
 import io.github.lucasf1.medvoll_api.api.medico.Medico;
 import io.github.lucasf1.medvoll_api.api.medico.MedicoRepository;
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("medicos")
@@ -16,9 +18,10 @@ public class MedicoController {
 
     @Autowired
     private MedicoRepository repository;
-    
+
     @PostMapping
-    public void cadastrar(@RequestBody DadosCadastroMedico dados) {
+    @Transactional
+    public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados) {
         repository.save(new Medico(dados));
     }
 }
