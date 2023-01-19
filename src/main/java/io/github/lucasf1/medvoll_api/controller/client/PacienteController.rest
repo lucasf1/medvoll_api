@@ -19,3 +19,12 @@ Content-Type: application/json
         "complemento": "complemento"
         }
 }
+
+###
+get {{baseUrl}}
+
+###
+get {{baseUrl}}?size=1&page=0
+
+###
+get {{baseUrl}}?sort=nome,desc

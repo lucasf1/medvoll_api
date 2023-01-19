@@ -55,3 +55,9 @@ Content-Type: application/json
 
 ###
 get {{baseUrl}}
+
+###
+get {{baseUrl}}?size=1&page=2
+
+###
+get {{baseUrl}}?sort=crm,desc
