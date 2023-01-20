@@ -61,3 +61,12 @@ get {{baseUrl}}?size=1&page=2
 
 ###
 get {{baseUrl}}?sort=crm,desc
+
+###
+put {{baseUrl}}
+Content-Type: application/json
+
+{
+    "id": 3,
+    "telefone": "61888888889"
+}
