@@ -67,6 +67,9 @@ put {{baseUrl}}
 Content-Type: application/json
 
 {
-    "id": 3,
-    "telefone": "61888888889"
+    "id": 2,
+    "nome": "Joao Carlos da Silva"
 }
+
+###
+delete {{baseUrl}}/1
