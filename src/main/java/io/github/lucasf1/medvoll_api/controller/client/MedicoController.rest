@@ -37,18 +37,18 @@ Content-Type: application/json
 # }
 
 {
-    "nome": "Carla Azevedo",
-    "email": "carla.azevedo@voll.med",
-    "telefone": "839993435",
-    "crm": "75784",
-    "especialidade": "GINECOLOGIA",
+    "nome": "Juliana Queiroz",
+    "email": "juliana.queirozo@voll.med",
+    "telefone": "83999022334",
+    "crm": "87432",
+    "especialidade": "CARDIOLOGIA",
     "endereco": {
-        "logradouro": "rua Z",
+        "logradouro": "rua tr",
         "bairro": "bairro",
-        "cep": "89343933",
-        "cidade": "Brasilia",
-        "uf": "DF",
-        "numero": "444",
+        "cep": "58033044",
+        "cidade": "JOÃO PESSOA",
+        "uf": "PB",
+        "numero": "44",
         "complemento": "complemento"
         }
 }
@@ -63,12 +63,15 @@ get {{baseUrl}}?size=1&page=2
 get {{baseUrl}}?sort=crm,desc
 
 ###
+get {{baseUrl}}/1
+
+###
 put {{baseUrl}}
 Content-Type: application/json
 
 {
     "id": 2,
-    "nome": "Joao Carlos da Silva"
+    "telefone": "2112345678"
 }
 
 ###
