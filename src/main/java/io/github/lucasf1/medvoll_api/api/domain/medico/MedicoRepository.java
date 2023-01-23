@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.api.medico;
+package io.github.lucasf1.medvoll_api.api.domain.medico;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

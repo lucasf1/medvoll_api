@@ -1,6 +1,6 @@
-package io.github.lucasf1.medvoll_api.api.paciente;
+package io.github.lucasf1.medvoll_api.api.domain.paciente;
 
-import io.github.lucasf1.medvoll_api.api.endereco.Endereco;
+import io.github.lucasf1.medvoll_api.api.domain.endereco.Endereco;
 
 public record DadosDetalhamentoPaciente(
         String nome,

@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.api.paciente;
+package io.github.lucasf1.medvoll_api.api.domain.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email, String cpf) {
     public DadosListagemPaciente(Paciente paciente) {

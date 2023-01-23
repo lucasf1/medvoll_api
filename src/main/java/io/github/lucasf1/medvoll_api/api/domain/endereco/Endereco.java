@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.api.endereco;
+package io.github.lucasf1.medvoll_api.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

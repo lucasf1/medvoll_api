@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.api.endereco;
+package io.github.lucasf1.medvoll_api.api.domain.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

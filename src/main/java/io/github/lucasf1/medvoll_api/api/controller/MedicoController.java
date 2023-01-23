@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.controller;
+package io.github.lucasf1.medvoll_api.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import io.github.lucasf1.medvoll_api.api.medico.DadosAtualizacaoMedico;
-import io.github.lucasf1.medvoll_api.api.medico.DadosCadastroMedico;
-import io.github.lucasf1.medvoll_api.api.medico.DadosDetalhamentoMedico;
-import io.github.lucasf1.medvoll_api.api.medico.DadosListagemMedico;
-import io.github.lucasf1.medvoll_api.api.medico.Medico;
-import io.github.lucasf1.medvoll_api.api.medico.MedicoRepository;
+import io.github.lucasf1.medvoll_api.api.domain.medico.DadosAtualizacaoMedico;
+import io.github.lucasf1.medvoll_api.api.domain.medico.DadosCadastroMedico;
+import io.github.lucasf1.medvoll_api.api.domain.medico.DadosDetalhamentoMedico;
+import io.github.lucasf1.medvoll_api.api.domain.medico.DadosListagemMedico;
+import io.github.lucasf1.medvoll_api.api.domain.medico.Medico;
+import io.github.lucasf1.medvoll_api.api.domain.medico.MedicoRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
