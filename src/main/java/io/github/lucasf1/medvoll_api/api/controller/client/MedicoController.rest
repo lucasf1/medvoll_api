@@ -37,10 +37,10 @@ Content-Type: application/json
 # }
 
 {
-    "nome": "Juliana Queiroz",
-    "email": "juliana.queirozo@voll.med",
+    "nome": "Bruna Silvz",
+    "email": "bruna.silva@voll.med",
     "telefone": "83999022334",
-    "crm": "87432",
+    "crm": "231243",
     "especialidade": "CARDIOLOGIA",
     "endereco": {
         "logradouro": "rua tr",
