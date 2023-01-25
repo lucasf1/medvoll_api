@@ -1,4 +1,4 @@
-package io.github.lucasf1.medvoll_api.api.infra;
+package io.github.lucasf1.medvoll_api.api.infra.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

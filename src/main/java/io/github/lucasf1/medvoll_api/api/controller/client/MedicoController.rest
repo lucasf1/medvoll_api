@@ -63,7 +63,7 @@ get {{baseUrl}}?size=1&page=2
 get {{baseUrl}}?sort=crm,desc
 
 ###
-get {{baseUrl}}/50
+get {{baseUrl}}/5
 
 ###
 put {{baseUrl}}

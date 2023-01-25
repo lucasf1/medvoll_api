@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:8080/login
+
+###
+post {{baseUrl}}
+Content-Type: application/json
+
+{
+    "login": "ana.souza@voll.med",
+    "senha": "123456"
+}
