@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.github.lucasf1.medvoll_api.api.domain.usuario.DadosAutenticacao;
+import io.github.lucasf1.medvoll_api.api.domain.usuario.Usuario;
+import io.github.lucasf1.medvoll_api.api.infra.security.DadosTokenJWT;
+import io.github.lucasf1.medvoll_api.api.infra.security.TokenService;
 import jakarta.validation.Valid;
 
 @RestController
@@ -19,12 +22,17 @@ public class AutenticacaoController {
     @Autowired
     private AuthenticationManager manager;
 
+    @Autowired
+    private TokenService tokenService;
+
     @PostMapping
     public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutenticacao dados) {
-        var token = new UsernamePasswordAuthenticationToken(
+        var authToken = new UsernamePasswordAuthenticationToken(
                 dados.login(), dados.senha());
-        var authentication = manager.authenticate(token);
+        var authentication = manager.authenticate(authToken);
 
-        return ResponseEntity.ok().build();
+        String tokenJWT = tokenService.gerarToken((Usuario) authentication.getPrincipal());
+
+        return ResponseEntity.ok(new DadosTokenJWT(tokenJWT));
     }
 }
