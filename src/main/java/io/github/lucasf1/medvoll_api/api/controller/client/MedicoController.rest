@@ -1,8 +1,10 @@
 @baseUrl = http://localhost:8080/medicos
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJpc3MiOiJBUEkgVm9sbC5tZWQiLCJleHAiOjE2NzQ5MTQ1NDl9.3PJQvOcgjqq26upx7ZoNThhrF59tmwAsZuHQO52XLoQ
 
 ###
 post {{baseUrl}}
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 # {
 #     "nome": "Rodrigo Ferreira",
@@ -55,19 +57,24 @@ Content-Type: application/json
 
 ###
 get {{baseUrl}}
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}?size=1&page=2
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}?sort=crm,desc
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}/5
+Authorization: Bearer {{token}}
 
 ###
 put {{baseUrl}}
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
     "id": 2,
@@ -76,3 +83,4 @@ Content-Type: application/json
 
 ###
 delete {{baseUrl}}/1
+Authorization: Bearer {{token}}
