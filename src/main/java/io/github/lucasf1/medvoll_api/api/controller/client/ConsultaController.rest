@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:8080/consultas
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJpc3MiOiJBUEkgVm9sbC5tZWQiLCJleHAiOjE2NzcxOTA4NDd9.74pVCEQHiB1oVPqVK4aIRsjTq3uUnzNrTQ_V4QO29eQ
+
+###
+post {{baseUrl}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "idPaciente": 1,
+    "idMedico": 1,
+    "data": "2023-10-10T10:00:00"
+}
