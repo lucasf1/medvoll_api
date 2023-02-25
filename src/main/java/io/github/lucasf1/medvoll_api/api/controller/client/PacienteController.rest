@@ -1,18 +1,20 @@
 @baseUrl = http://localhost:8080/pacientes
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmEuc291emFAdm9sbC5tZWQiLCJpc3MiOiJBUEkgVm9sbC5tZWQiLCJleHAiOjE2NzczMzYyMTN9.Ok4MVg2YvSuEp-IVtF3sWCqawPNRpDKdqy704RTcHSU
 
 ###
 post {{baseUrl}}
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
-    "nome": "Mariana Golden",
-    "email": "mariana.golden@voll.med",
-    "cpf": "11111111111",
-    "telefone": "88 999882233",
+    "nome": "Brock Hangman",
+    "email": "brock.hangmant@voll.med",
+    "cpf": "33333333333",
+    "telefone": "88 98745332",
     "endereco": {
-        "logradouro": "rua x",
+        "logradouro": "rua z",
         "bairro": "bairro",
-        "cep": "55443354",
+        "cep": "55443334",
         "cidade": "Cajá",
         "uf": "PB",
         "numero": "112",
@@ -22,12 +24,20 @@ Content-Type: application/json
 
 ###
 get {{baseUrl}}
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}?size=1&page=0
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}?sort=nome,desc
+Authorization: Bearer {{token}}
 
 ###
 get {{baseUrl}}/1
+Authorization: Bearer {{token}}
+
+###
+delete {{baseUrl}}/3
+Authorization: Bearer {{token}}
