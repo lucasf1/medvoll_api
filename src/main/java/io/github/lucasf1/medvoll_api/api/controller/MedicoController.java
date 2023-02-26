@@ -21,11 +21,13 @@ import io.github.lucasf1.medvoll_api.api.domain.medico.DadosDetalhamentoMedico;
 import io.github.lucasf1.medvoll_api.api.domain.medico.DadosListagemMedico;
 import io.github.lucasf1.medvoll_api.api.domain.medico.Medico;
 import io.github.lucasf1.medvoll_api.api.domain.medico.MedicoRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("medicos")
+@SecurityRequirement(name = "bearer-key")
 public class MedicoController {
 
     @Autowired

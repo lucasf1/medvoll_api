@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import io.github.lucasf1.medvoll_api.api.domain.consulta.AgendaDeConsultas;
 import io.github.lucasf1.medvoll_api.api.domain.consulta.DadosAgendamentoConsulta;
 import io.github.lucasf1.medvoll_api.api.domain.consulta.DadosCancelamentoConsulta;
-import io.github.lucasf1.medvoll_api.api.domain.consulta.DadosDetalhamentoConsulta;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("consultas")
+@SecurityRequirement(name = "bearer-key")
 public class ConsultaController {
 
     @Autowired
